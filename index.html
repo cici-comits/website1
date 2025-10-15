@@ -6,6 +6,93 @@
     <title>Login Page</title> 
     <link rel="stylesheet" href="login.css">
 </head>
+    <style>
+        /* === Style Dasar === */
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(to right, #fa98e5, #fa83b5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0px;
+  color: #faecec;
+}
+
+/* === Judul === */
+h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #faf5ee;
+  letter-spacing: 2px;
+}
+
+/* === Form Login === */
+form {
+  background-color: #d116b2;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+/* Label */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #c84dcc;
+  border-radius: 5px;
+  margin-bottom: 38px;
+  font-size: 13px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #e60eb7;
+  box-shadow: 0 0 5px #ffffff;
+}
+
+/* Tombol Login */
+input[type="submit"] {
+  width: 100%;
+  background-color: #f78ec7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+  transform: translateY(-4px);
+}
+
+/* === Footer === */
+.footer {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+
+    </style>
 <body>
     <h1>LOGIN FORM</h1>
     <form action="#" method="post">
@@ -25,6 +112,7 @@
     </div>
 </body>
 </html>
+
 
 
 
