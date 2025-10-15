@@ -1,150 +1,83 @@
- #header {
-   background:rgb(17, 3, 17);
-   color:#fa07dad2;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   height: 100px;
-   width: 1350px;
-   text-align:center;
-   border-radius: 5px;
-   padding: 10px;
-   margin: 0px;
+/* === Style Dasar === */
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(to right, #fa98e5, #fa83b5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0px;
+  color: #faecec;
 }
 
-   .dashboard-layout {
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f1eded;
-    color: #e911cc;
-    align-items: center;
+/* === Judul === */
+h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #faf5ee;
+  letter-spacing: 2px;
+}
 
-  }
-  
-  .sidebar {
-    width: 220px;
-    background-color: #a70f8d;
-    padding: 2rem;
-    margin: 0;
-    box-shadow: 2px 0 10px #000;
-  }
-  
-  .sidebar h2 {
-    color: #080808;
-    margin-bottom: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    margin: 1rem 0;
-  }
-  
-  .sidebar a {
-    color: #f3eaf2;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f001f8;
-  }
+/* === Form Login === */
+form {
+  background-color: #d116b2;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
 
-   .main-content {
-    text-align: center;
-  }
+/* Label */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
 
-  .home-card {
-    background-color: #1e1e1e;
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 600px;
-    margin: 0;
-    text-align: center;
-  }
+/* Input */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #c84dcc;
+  border-radius: 5px;
+  margin-bottom: 38px;
+  font-size: 13px;
+  outline: none;
+  transition: 0.2s;
+}
 
-.stats {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1.5rem;
-  }
-  
-  .stats-card {
-    background-color: #7c0855;
-    padding: 10px;
-    border-radius: 10px;
-    width: 150px;
-    text-align: center;
-    margin: 10px;
-    align-content: center;
-  }
-  
-  .stats-card h2 {
-    color: #fd07b3;
-    margin: 0;
-    font-size: 2rem;
-  }
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #e60eb7;
+  box-shadow: 0 0 5px #ffffff;
+}
 
-   .quote {
-    font-style:italic;
-    color: #f0eaef;
-    margin-bottom: 2rem;
-  }
-  
-  .stats-card p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #af84af;
-  }
+/* Tombol Login */
+input[type="submit"] {
+  width: 100%;
+  background-color: #f78ec7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-   input {
-    width: 50%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 6px;
-    background-color: #faf8fa;
-    color: #000;
-  }
+input[type="submit"]:hover {
+  background-color: #000000;
+  transform: translateY(-4px);
+}
 
-  .placeholder{
-    color: #000;
-  }
-
-  .remember-forgot{
-    color: #a70f8d;
-  }
-
-  .wrapper{
-    background-color: #080808;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 0 20px #611164;
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-  }
-
-  button {
-    background-color: #d570ee;
-    color: #121212;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background-color: #44092c;
-  }
-
-  .footnote {
-    font-size: 0.8rem;
-    color: #eb3197;
-    margin-top: 1rem;
-  }
+/* === Footer === */
+.footer {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #ffffff;
+}
