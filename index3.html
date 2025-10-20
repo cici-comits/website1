@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Sederhana - Cia Pratama</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animasi lembut muncul ke atas */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-100 via-white to-purple-100 flex flex-col items-center min-h-screen p-4 sm:p-6 font-sans">
+
+  <!-- HEADER -->
+  <header class="text-center mb-8 sm:mb-10 px-4">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 drop-shadow-lg">
+      Portofolio Chia
+    </h1>
+    <p class="text-gray-600 mt-2 text-sm sm:text-base">get to know me more closely ✨</p>
+  </header>
+
+  <!-- KARTU PROFIL -->
+  <div class="bg-white/80 backdrop-blur-md shadow-2xl rounded-3xl p-6 sm:p-8 w-full max-w-sm sm:max-w-md text-center border border-white/50 animate-[fadeInUp_1s_ease]">
+
+    <!-- FOTO PROFIL -->
+    <div class="relative inline-block">
+      <img src="WhatsApp Image 2025-10-20 at 14.15.26.jpeg" alt="Foto Profil"
+        class="w-28 h-28 sm:w-36 sm:h-36 rounded-full mx-auto shadow-xl ring-4 ring-blue-300/50 transition duration-300 hover:scale-105 hover:ring-purple-300/70">
+      <span class="absolute bottom-2 right-2 bg-green-400 w-3 h-3 sm:w-4 sm:h-4 rounded-full border-2 border-white"></span>
+    </div>
+
+    <!-- NAMA & DATA DIRI -->
+    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mt-4 sm:mt-5">Chiara S.A</h2>
+    <p class="text-gray-500 text-xs sm:text-sm mt-1 tracking-wide">Pelajar | SMK Media Informatika | PPLG | 26.01.2009</p>
+
+    <!-- GARIS PEMBATAS -->
+    <div class="h-[2px] bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 my-4 w-2/3 sm:w-1/2 mx-auto rounded-full"></div>
+
+    <!-- DESKRIPSI SINGKAT -->
+    <p class="text-gray-600 text-sm sm:text-base leading-relaxed px-2 sm:px-0">
+      Aku adalah siswa yang sangat suka belajar hal baru, terutama dibiang teknologi. Teknologi mengajarkan banyak sekali hal yang belum aku ketahui,
+      aku belajar dijurusan <span class="font-semibold text-blue-600">PPLG</span> yang mengajarkan cara membuat Website, Aplikasi dan semacamnya. Dan saat ini
+      aku sedang mempelajari 
+      <span class="font-semibold text-blue-600">Tailwind CSS</span>
+      dan pengembangan front-end di lab komputer.
+    </p>
+
+    <!-- TOMBOL -->
+    <button
+      class="mt-5 sm:mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold px-5 py-2 sm:px-6 sm:py-2.5 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+      ✨ Lihat Tentang Saya
+    </button>
+
+    <!-- SOSIAL MEDIA -->
+    <div class="mt-6 flex justify-center gap-5 text-gray-500">
+      <a href="#" class="hover:text-blue-600 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.2 4.2 0 0 0 1.85-2.33 8.32 8.32 0 0 1-2.65 1.01 4.15 4.15 0 0 0-7.08 3.78A11.8 11.8 0 0 1 3.1 4.8a4.15 4.15 0 0 0 1.28 5.53 4.06 4.06 0 0 1-1.88-.52v.05a4.16 4.16 0 0 0 3.33 4.07 4.18 4.18 0 0 1-1.87.07 4.16 4.16 0 0 0 3.88 2.89A8.34 8.34 0 0 1 2 19.54a11.76 11.76 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.34 8.34 0 0 0 22.46 6z"/></svg></a>
+      <a href="#" class="hover:text-pink-600 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5c3.18 0 5.75-2.57 5.75-5.75v-8.5C22 4.57 19.43 2 16.25 2h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.25 1.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></a>
+      <a href="#" class="hover:text-gray-700 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 5.924a8.7 8.7 0 0 1-2.513.689 4.38 4.38 0 0 0 1.923-2.414 8.72 8.72 0 0 1-2.772 1.06 4.36 4.36 0 0 0-7.421 3.97 12.38 12.38 0 0 1-8.995-4.563 4.36 4.36 0 0 0 1.35 5.818 4.3 4.3 0 0 1-1.976-.546v.055a4.36 4.36 0 0 0 3.496 4.275 4.34 4.34 0 0 1-1.971.075 4.36 4.36 0 0 0 4.07 3.03A8.74 8.74 0 0 1 2 19.54a12.33 12.33 0 0 0 6.69 1.96c8.03 0 12.43-6.65 12.43-12.43 0-.19 0-.37-.01-.55A8.9 8.9 0 0 0 22.23 5.9z"/></svg></a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="mt-10 text-gray-500 text-xs sm:text-sm text-center">
+    <p>© 2025 chiara s.a. Dibuat dengan ❤️ dan Tailwind CSS.</p><br>
+    <p>Jl.Papan I/Pisangan Kretek No.99, Petukangan South, Kecamatan Pesanggrahan, Jakarta Selatan.</p>
+  </footer>
+
+</body>
+</html>
